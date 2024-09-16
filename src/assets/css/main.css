@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+html {
+    --green: #caf389;
+    --gray:  #f9f9f9;
+    --black: #2b2b2b;
+    --black-darck: #162120;
+
+    --button-bg: #3d5163;
+    --button-hover: #162120;
+    --color-button: #fff;
+
+    --them-boorder-radius-block: 20px;
+    --them-boorder-radius-input: 8px;
+}
+h1 {
+    /*color: red!important;*/
+}
+
+.card {
+    background: var(--gray);
+    box-shadow: 0px 0 2px 0px #ccc;
+    border-radius: var(--them-boorder-radius-block);
+}

@@ -1,0 +1,92 @@
+.tableCalc {
+    color: var(--black);
+}
+.tableCalc  .table__row {
+
+}
+.tableCalc .table__head {
+    background: var(--green);
+    border-radius: 25px;
+    padding: .6rem 2.2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    bottom: -2.5rem;
+    box-shadow: 0 0 4px 1px #e3e3e3c4;
+}
+.tableCalc .table__result {
+    background: var(--gray);
+    padding: 1.2rem 1.2rem;
+    border-radius: 25px;
+}
+.tableCalc .table__item {
+    padding: .5rem 1.2rem;
+    transition: .2s;
+    border-radius: 8px;
+}
+.tableCalc .table__item:hover {
+    box-shadow: 0 0 4px 1px #e3e3e3c4;
+    cursor: pointer;
+}
+.tableCalc .table__time--wrapper {
+    display: flex;
+}
+.tableCalc .table__time--wrapper div:first-child, 
+.tableCalc .table__head div:first-child { 
+    flex: 1;
+}
+
+.tableCalc .table__time--wrapper div, .tableCalc .table__head div { 
+    flex: 3;
+    text-align: left;
+}
+.tableCalc .table__time--wrapper div:nth-child(2n), 
+.tableCalc .table__head div:nth-child(2n) { 
+    flex: 4;
+}
+.tableCalc .table__time--wrapper div:nth-child(2n)::first-letter {
+    text-transform: uppercase;
+}
+.tableCalc .button--darck {
+
+}
+.tableCalc .table__buttonResult {
+
+    width: 35%;
+    margin: 1rem auto;
+    padding: .5rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--button-hover);
+    color: var(--color-button);
+}
+.tableCalc .table__buttonResult:hover {
+    background:  var(--button-bg);
+}
+.tableCalc .not__data {
+
+}
+@media screen and (max-width: 768px) {
+    .tableCalc {
+        min-width: 768px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .tableCalc .table__head {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .tableCalc .table__item {
+        padding: .5rem .6rem;
+    }
+    .tableCalc .table__item:hover {
+        box-shadow: none;
+    }
+    .tableCalc .table__result {
+        /* padding: .5rem .6rem; */
+    }
+}
+@media screen and (max-width: 540px) {
+
+}

@@ -1,0 +1,13 @@
+.statistik {
+    text-align: left;
+    color: var(--black);
+    padding: 1.2rem;
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #ccc;
+    }
+    &__value {
+        font-weight: 700;
+    }
+}
